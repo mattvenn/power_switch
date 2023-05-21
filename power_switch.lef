@@ -1,0 +1,40 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO power_switch
+  CLASS BLOCK ;
+  FOREIGN power_switch ;
+  ORIGIN 2.570 1.970 ;
+  SIZE 22.690 BY 16.440 ;
+  PIN source
+    PORT
+      LAYER met2 ;
+        RECT -0.960 10.260 17.700 14.470 ;
+    END
+  END source
+  PIN drain
+    PORT
+      LAYER met2 ;
+        RECT -1.030 -1.970 17.630 1.450 ;
+    END
+  END drain
+  PIN gate
+    PORT
+      LAYER met1 ;
+        RECT -2.570 0.360 -2.270 11.300 ;
+    END
+  END gate
+  OBS
+      LAYER li1 ;
+        RECT -0.085 -0.085 17.025 11.745 ;
+      LAYER met1 ;
+        RECT -2.270 11.580 20.120 12.000 ;
+        RECT -1.990 0.080 20.120 11.580 ;
+        RECT -2.270 -0.190 20.120 0.080 ;
+      LAYER met2 ;
+        RECT -1.090 1.730 17.830 9.980 ;
+  END
+END power_switch
+END LIBRARY
+
